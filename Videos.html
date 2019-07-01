@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Title</title>
   <link rel="stylesheet" media="screen" href="css/videopopup.css">
   <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
   <script src="js/YouTubePopUp.jquery.js"></script>
   <script>
-    window.onload = jQuery(function() {
-      jQuery("a.demo").YouTubePopUp();
-    });
+    function playVid(){
+      document.getElementById("firstVid").click();
+      $("#firstVid").trigger('click');
+    }
     jQuery(function(){
       jQuery("a.demo").YouTubePopUp();
     });
@@ -18,7 +19,7 @@
 
 
 </head>
-<body>
+<body onload="playVid()">
 <div class="contenido">
   <div class="logo">
     <div class="logo1994_2019">
@@ -31,13 +32,13 @@
   </div>
 
   <div class="videoBar">
-    <a class="demo" href="https://vimeo.com/338742580/4072ebb871">
+    <a class="demo" href="https://youtu.be/1F0tH43_lRk" id="firstVid">
       <img src="./img/video2.png">
     </a>
-    <a class="demo" href="https://vimeo.com/338742580/4072ebb871">
+    <a class="demo" href="https://vimeo.com/338742580/4072ebb871" id="secondVid">
       <img src="./img/video1.png">
     </a>
-    <a class="demo" href="https://vimeo.com/338742580/4072ebb871">
+    <a class="demo" href="https://vimeo.com/338742580/4072ebb871" id="thirdVid">
       <img src="./img/video3.png">
     </a>
   </div>
@@ -48,12 +49,17 @@
   </div>
 
 
-  <a class="demo" href="https://vimeo.com/338742580/4072ebb871">Vimeo</a>
-
 
 </div>
 
-
+<div class="boton_arriba">
+  <img src="./img/pagina2/gran-ricardo-flecha-2.png" alt="" />
+</div>
+<div class="boton_abajo">
+  <a href="">
+    <img src="./img/pagina2/gran-ricardo-flecha-1.png" alt="" />
+  </a>
+</div>
 
 
 </body>
