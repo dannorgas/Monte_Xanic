@@ -1,0 +1,267 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("./img/pagina2/fondo_botella.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+}
+
+.boton_arriba {
+    position: fixed;
+    top: 0;
+    left: 48%;
+}
+
+.boton_abajo {
+    position: fixed;
+    bottom: 0;
+    left: 48%;
+}
+
+.boton_arriba img, .boton_abajo img {
+    padding-top: 1rem;
+    height: 50px;
+    width: 40px;
+}
+
+.principal {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_xanic {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    min-width: 30%;
+}
+
+.logo_xanic img {
+    width: 90px;
+    height: 90px;
+}
+
+.contenido_gran_ricardo {
+    min-height: 60vh;
+    min-width: 58%;
+    padding-left: 2rem;
+}
+
+/* d4ni3l.krok */
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagen_15anos {
+    padding-top: 5rem;
+    min-width: 180px;
+    max-width: 200px;
+}
+
+.categorias div img {
+    width: 140px;
+    height: 50px;
+}
+
+.categorias div img:hover {
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.0);
+    padding: 0;
+}
+
+@media(min-height:900px) {
+    .imagen_15anos {
+        min-width: 200px;
+        max-width: 230px;
+    }
+    .categorias div img {
+        width: 200px;
+        height: 70px;
+    }
+}
+
+/* DETALLES DE CADA UNA DE LAS CATEGORIAS */
+
+.detalles_categorias {
+    display: flex;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: column;
+}
+
+#imagen_detalle1, #imagen_detalle2, #imagen_detalle3, #imagen_detalle4, #imagen_detalle5 {
+    display: none;
+}
+
+.imagen_detalle {
+    flex: 1;
+    margin-left: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.imagen_detalle {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.imagen_detalle img {
+    max-width: 100%;
+}
+
+#imagen_detalle1 .logo, #imagen_detalle2 .logo {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+#imagen_detalle1 .texto {
+    min-width: 130px;
+    min-height: 70px;
+    max-width: 180px;
+}
+
+#imagen_detalle2 .logo {
+    max-width: 130px;
+    max-height: 100px;
+}
+
+#imagen_detalle2 .texto {
+    min-width: 230px;
+    max-width: 230px;
+    min-height: 30px;
+}
+
+#imagen_detalle3 .logo {
+    max-width: 300px;
+    min-width: 50px;
+    max-height: 260px;
+}
+
+#imagen_detalle3 .texto {
+    min-width: 350px;
+    max-width: 400px;
+    min-height: 250px;
+    max-height: 280px;
+}
+
+#imagen_detalle4 .logo {
+    max-width: 180px;
+    max-height: 120px;
+}
+
+#imagen_detalle4 .texto {
+    max-width: 285px;
+    min-width: 270px;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+#imagen_detalle5 .logo {
+    max-width: 180px;
+    max-height: 130px;
+}
+
+#imagen_detalle5 .texto {
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 130px;
+    max-height: 200px;
+}
+
+@media(min-height:750px) {
+    #imagen_detalle3 .texto {
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 250px;
+        max-height: 280px;
+    }
+}
+
+/* @media(min-height:900px) {
+    #imagen_detalle1 .texto {
+        min-width: 282px;
+        min-height: 96px;
+    }
+    #imagen_detalle3 .logo {
+        max-width: 300px;
+        min-width: 60px;
+        min-height: 400px;
+        max-height: 400px;
+    }
+    #imagen_detalle3 .texto {
+        min-width: 450px;
+        min-height: 300px;
+        max-height: 350px;
+    }
+} */
+
+@media(min-height:850px) {
+    .imagen_detalle {
+        margin-left: 4rem;
+    }
+    .imagen_15anos {
+        padding-top: 8rem;
+        min-width: 100px;
+        max-width: 200px;
+        margin-bottom: 0.5rem;
+    }
+    .categorias div img {
+        width: 200px;
+        height: 60px;
+    }
+    #imagen_detalle1 .texto {
+        min-width: 282px;
+        min-height: 96px;
+    }
+    #imagen_detalle2 .texto {
+        min-width: 371px;
+        min-height: 35px;
+    }
+    #imagen_detalle3 .texto {
+        min-width: 600px;
+        min-height: 300px;
+        max-height: 350px;
+    }
+    #imagen_detalle3 .logo {
+        max-width: 200px;
+        max-height: 350px;
+    }
+    #imagen_detalle4 .texto {
+        min-width: 420px;
+        min-height: 133px;
+        max-height: 350px;
+    }
+    #imagen_detalle5 .texto {
+        min-width: 420px;
+        min-height: 133px;
+        max-height: 350px;
+    }
+}
+
+/* @media(min-height:750px){
+
+    #imagen_detalle1 img:nth-child(2) {
+      height: 1000px;
+    }
+} */
+
+/* NAVEGACION */
+
+.navegacion_gran_ricardo img {
+    width: 8rem;
+}

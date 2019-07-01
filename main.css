@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+}
+
+.contenido {
+    margin-top: 2rem;
+    min-height: 85vh;
+    max-height: 90vh;
+    background-image: url("./img/gran-ricardo-marco.png");
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo1994_2019 {
+    padding-top: 1rem;
+}
+
+.vino_mensaje {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vino_mensaje img:nth-child(1) {
+    max-height: 340px;
+    padding-right: 3rem;
+    padding-top: 0;
+}
+
+.vino_mensaje img:nth-child(2) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-height: 330px;
+}
+
+.contenido_entrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido .mayor_18 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contenido_entrar .mayor_18 img {
+    max-height: 7rem;
+}
+
+.contenido .si_no_botones {
+    display: flex;
+}
+
+.contenido_entrar .si_no_botones img {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    max-height: 8rem;
+    max-width: 90px;
+}
+
+.contenido_entrar .si_no_botones img:nth-child(2) {
+    max-height: 3.6rem;
+}
+
+/* MEDIA QUERIES  */
+
+@media(min-height:700px) {
+    .vino_mensaje img {
+        max-height: 420px;
+    }
+    .vino_mensaje img:nth-child(1) {
+        max-height: 420px;
+    }
+    .contenido .mayor_18 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media(min-height:850px) {
+    .vino_mensaje img:nth-child(1) {
+        max-height: 520px;
+    }
+    .contenido_entrar .si_no_botones img {
+        max-width: 140px;
+    }
+    .logo1994_2019 {
+        padding-top: 2.4rem;
+    }
+    .contenido_entrar .si_no_botones img {
+        max-width: 130px;
+    }
+}
+
+@media(min-height:850px) {
+    .vino_mensaje {
+        padding-top: 2rem;
+    }
+}
+
+@media(min-height:1000px) {
+    .contenido .mayor_18 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .vino_mensaje img {
+        max-height: 620px;
+    }
+    .vino_mensaje img:nth-child(1) {
+        max-height: 600px;
+    }
+    .contenido_entrar .si_no_botones img {
+        max-width: 140px;
+    }
+}
+
+@media(min-height:1080px) {
+    .vino_mensaje img:nth-child(1) {
+        max-height: 620px;
+    }
+}
