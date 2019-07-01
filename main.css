@@ -11,6 +11,10 @@ body {
     background-color: black;
 }
 
+.juanita{
+  color: blue;
+  
+}
 .contenido {
     margin-top: 2rem;
     min-height: 85vh;
