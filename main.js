@@ -1,3 +1,7 @@
+window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
+
 $(document).ready(function() {
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
@@ -39,22 +43,18 @@ $(document).ready(function() {
     .on("mouseout", function(event) {
       $("#imagen_detalle5").hide();
     });
-
-
 });
 
-let hold = 'Puntos';
-function hover(element, src)
-{
-
-  element.setAttribute('src', './img/pagina3/s'+src+'.png');
-  $(document).ready(function ()
-  {
-    if (hold !== src) $("#i"+hold).attr('src', './img/pagina3/i'+hold+'.png');
-    $("#dText").attr('src', './img/pagina3/tex'+src+'.png');
+let hold = "Puntos";
+function hover(element, src) {
+  element.setAttribute("src", "./img/pagina3/s" + src + ".png");
+  $(document).ready(function() {
+    if (hold !== src)
+      $("#i" + hold).attr("src", "./img/pagina3/i" + hold + ".png");
+    $("#dText").attr("src", "./img/pagina3/tex" + src + ".png");
     hold = src;
   });
-
-
 }
+
+
 
