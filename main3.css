@@ -138,6 +138,9 @@ body {
         width: 70px;
         height: 70px;
     }
+    .content3 .elementos img {
+        max-width: 90%;
+    }
 }
 
 @media(min-width:1200px) {
