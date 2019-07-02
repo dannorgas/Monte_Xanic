@@ -65,11 +65,11 @@ body {
 .nav {
   position: fixed;
   right: 0;
-  top: 45%;
+  top: 42%;
 }
 
 .nav img {
-  width: 150px;
+  width: 130px;
   height: 100px;
 }
 
@@ -226,8 +226,8 @@ body {
     height: 499px;
   }
   .nav img {
-    width: 150px;
-    height: 110px;
+    width: 120px;
+    height: 100px;
   }
 }
 
