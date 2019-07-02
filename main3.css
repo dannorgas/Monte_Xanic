@@ -17,21 +17,28 @@ body {
     /*  background-image: url("./img/pagina3/fondo.png"); */
 }
 
-.contenido_todo {
-    display: flex;
-    align-items: center;
-}
-
 .principal {
-    min-height: 90vh;
+    min-height: 100vh;
     max-width: 75%;
     display: flex;
     flex-direction: column;
 }
 
+.principal .fondo {
+    position: absolute;
+    z-index: -1;
+}
+
+.principal .fondo img {
+    min-height: 99.3vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    max-height: 99.6vh;
+}
+
 .content1 {
     text-align: end;
-    padding-top: 3rem;
+    padding-top: 5rem;
     flex: 0 1 calc(20% - 1rem);
 }
 
@@ -51,14 +58,37 @@ body {
 
 .content3 {
     flex: 1;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5rem;
-    align-items: flex-start;
+    padding-top: 3rem;
+    padding-left: 2rem;
 }
 
-.content3 img {
-    max-width: 200px;
+.content3 .elementos {
+    max-height: 50%;
+    display: flex;
+}
+
+.content3 .elementos img {
+    max-width: 100%;
+}
+
+.content3 .elementos .logoX {
+    padding-top: 3rem;
+    flex: 0 1 calc(12% - 1rem);
+    padding-right: 1rem;
+}
+
+.content3 .elementos .premios {
+    flex: 0 1 calc(38% - 1rem);
+}
+
+.content3 .elementos .descText {
+    flex: 1;
+    text-align: right;
+}
+
+.content3 .elementos .logoX img {
+    width: 60px;
+    height: 60px;
 }
 
 .boton_arriba {
@@ -79,181 +109,61 @@ body {
     width: 40px;
 }
 
-.imagen_rara {
-    position: fixed;
-    top: -10%;
-    left: 70%;
-    z-index: -1;
-    width: 800px;
-    height: 1000px;
-}
-
-.navegacion{
+.navegacion {
     position: fixed;
     right: 0;
     top: 40%;
-
 }
-.navegacion img{
-    width: 250px;
+
+.navegacion img {
+    width: 200px;
     height: 100px;
 }
 
-.descText img{
-    max-height: 350px;
-    max-width: 500px;
-}
-
-.premios {
-    position: fixed;
-    top: 25%;
-    right: 65%;
-
-
-}
-
-.premios img {
-    max-width: 800px;
-    max-height: 900px;
-
-}
-
-.logoX img {
-    padding-left: 1rem;
-
-}
-
-
-@media(min-height: 600px) {
-    .imagen_rara img{
-        max-height: 600px;
-        max-width: 400px;
+@media(min-width:768px) {
+    .content3 .elementos .logoX {
+        padding-top: 3rem;
     }
-
-    .content1 img{
-        max-height: 70px;
-        max-width: 80px;
+    .content3 .elementos .logoX img {
+        width: 70px;
+        height: 70px;
     }
+}
 
+@media(min-width:1000px) {
+    .content3 .elementos .logoX {
+        padding-top: 3rem;
+    }
+    .content3 .elementos .logoX img {
+        width: 70px;
+        height: 70px;
+    }
+}
 
-
-    .descText{
-
+@media(min-width:1200px) {
+    .content3 .elementos .logoX {
+        padding-top: 5rem;
+    }
+    .content3 .elementos .logoX img {
+        width: 80px;
+        height: 80px;
+    }
+    .navegacion {
         position: fixed;
-        top: 27%;
-        left: 41%;
-
+        right: 0;
+        top: 35%;
     }
-
-    .descText img{
-        max-height: 350px;
-        max-width: 550px;
-    }
-
-    .premios img{
-        max-width: 280px;
-        max-height: 380px;
-    }
-
-    .logoX img{
-        max-height: 90px;
-        max-width: 100px;
-    }
-
 }
 
-@media(min-height: 750px) {
-    .imagen_rara img{
-        max-height: 680px;
-        max-width: 430px;
+@media(min-width:1500px) {
+    .content3 .elementos .logoX {
+        padding-top: 7rem;
     }
-
-    .content1 img{
-        max-height: 70px;
-        max-width: 80px;
+    .navegacion {
+        top: 38%;
     }
-
-    .premios img{
-        max-width: 280px;
-        max-height: 380px;
+    .content3 .elementos .logoX img {
+        width: 80px;
+        height: 80px;
     }
-
-    .logoX img{
-        max-height: 90px;
-        max-width: 100px;
-    }
-
 }
-
-@media (min-height: 900px) {
-
-    .imagen_rara{
-        max-width: 600px;
-        max-height: 900px;
-    }
-
-    .content1 img{
-        max-height: 90px;
-        max-width: 100px;
-    }
-
-    .descText{
-
-        position: fixed;
-        top: 25%;
-        left: 50%;
-
-    }
-
-    .premios img{
-        max-width: 380px;
-        max-height: 480px;
-    }
-
-    .logoX img{
-        max-height: 90px;
-        max-width: 100px;
-    }
-
-}
-
-@media (min-height: 1000px) {
-
-    .imagen_rara{
-    }
-
-    .imagen_rara img{
-        max-height: 900px;
-        max-width: 580px;
-    }
-
-    .content1 img{
-        max-height: 90px;
-        max-width: 100px;
-    }
-
-    .descText{
-
-        position: fixed;
-        top: 20%;
-        left: 40%;
-
-    }
-
-    .premios img{
-        max-width: 380px;
-        max-height: 480px;
-    }
-
-    .descText img{
-        max-height: 600px;
-        max-width: 850px;
-    }
-
-    .logoX img{
-        max-height: 90px;
-        max-width: 100px;
-    }
-
-}
-
