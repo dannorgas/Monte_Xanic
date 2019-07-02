@@ -15,7 +15,8 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("./img/pagina5/1.jpg");
+    background-color: rgb(31, 29, 29);
+   /*  background-image: url("./img/pagina5/1.jpg"); */
 }
 
 .boton_arriba {

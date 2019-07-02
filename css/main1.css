@@ -77,11 +77,11 @@ body {
 .nav {
     position: fixed;
     right: 0;
-    top: 40%;
+    top: 45%;
 }
 
 .nav img {
-    width: 200px;
+    width: 150px;
     height: 100px;
 }
 .boton_arriba {
@@ -100,8 +100,8 @@ body {
 
 .boton_arriba img, .boton_abajo img {
     padding-top: 1rem;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 
 @media(min-height:1024px) {
@@ -250,4 +250,8 @@ body {
    width: 542px;
    height: 702px;
   }
+  .nav img {
+    width: 150px;
+    height: 120px;
+}
 }
