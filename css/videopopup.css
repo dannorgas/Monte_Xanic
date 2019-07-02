@@ -92,76 +92,150 @@ body {
 
 /* MEDIA QUERIES  */
 
-@media(min-height:700px) {
-  .ricardoLogo img {
-    max-height: 300px;
-  }
-
-  .demo img {
-    max-height: 150px;
-  }
-
-  .xxv img{
-    max-height: 150px;
-  }
-
-}
-
-@media(min-height:850px) {
-  .ricardoLogo img {
-    max-height: 300px;
-  }
-
-  .demo img {
-    max-height: 150px;
-  }
-
-  .xxv img{
-    max-height: 150px;
-  }
-}
-
-@media(min-height:850px) {
+@media(min-height:600px) {
   .logo1994_2019 {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 150px;
+    max-width: 200px;
+
   }
 
   .ricardoLogo img {
-    max-height: 300px;
+    max-height: 200px;
+    max-width: 300px;
   }
 
-  .demo img {
-    max-height: 150px;
-  }
-
-  .xxv {
+  .videoBar {
     padding-top: 4em;
   }
 
+  .demo img {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-height: 120px;
+    max-width: 220px;
+  }
+
+  .xxv {
+    padding-top: 2rem;
+
+  }
+
   .xxv img{
-    max-height: 140px;
+    max-height: 150px;
+    max-width: 200px;
+  }
+
+}
+
+
+@media(min-height:700px) {
+  .ricardoLogo img {
+    max-height: 200px;
+    max-width: 300px;
+  }
+
+  .videoBar {
+    padding-top: 7em;
+  }
+
+  .demo img {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-height: 150px;
+    max-width: 250px;
+  }
+
+  .xxv {
+    padding-top: 5rem;
+
+  }
+
+  .xxv img{
+    max-height: 200px;
+    max-width: 250px;
+  }
+}
+
+@media(min-height:900px) {
+  .logo1994_2019 {
+    padding-top: 1.5rem;
+
+  }
+
+  .logo1994_2019 img{
+    max-height: 200px;
+    max-width: 300px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 450px;
+    max-width: 550px;
+  }
+
+  .videoBar {
+    padding-top: 5rem;
+  }
+
+  .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    max-height: 250px;
+    max-width: 350px;
+  }
+
+  .xxv {
+    padding-top: 4rem;
+
+  }
+
+  .xxv img{
+    max-height: 150px;
+    max-width: 250px;
   }
 }
 
 @media(min-height:1000px) {
-  .ricardoLogo img {
-    max-height: 390px;
+  .logo1994_2019 {
+    padding-top: 1rem;
+
   }
 
-  .videoBar{
-    padding-top: 1em;
+  .logo1994_2019 img{
+    max-height: 250px;
+    max-width: 400px;
+
+  }
+
+  .ricardoLogo img {
+    max-height: 450px;
+    max-width: 550px;
+  }
+
+  .videoBar {
+    padding-top: 7em;
   }
 
   .demo img {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
     max-height: 250px;
+    max-width: 350px;
   }
 
   .xxv {
-    padding-top: 2em;
+    padding-top: 5rem;
+
   }
 
   .xxv img{
-    max-height: 100px;
+    max-height: 200px;
+    max-width: 300px;
   }
 }
 @charset "UTF-8";
