@@ -1,4 +1,7 @@
-const swup = new Swup();
+window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
+
 $(document).ready(function() {
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
@@ -55,6 +58,3 @@ function hover(element, src) {
 
 
 
-window.addEventListener("beforeunload", function () {
-  document.body.classList.add("animate-out");
-});
