@@ -19,7 +19,6 @@ body {
 }
 
 .boton_arriba {
-    padding-top: 0.3rem;
     position: fixed;
     top: 0;
     left: 49%;
@@ -32,9 +31,14 @@ body {
     left: 48%;
 }
 
-.boton_arriba img, .boton_abajo img {
-    padding-top: 1rem;
-    height: 50px;
+ .boton_abajo img {
+   
+    height: 40px;
+    width: 40px;
+}
+.boton_arriba img{
+    padding-top: 0.1rem;
+    height: 40px;
     width: 40px;
 }
 
