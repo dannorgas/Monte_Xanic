@@ -22,7 +22,7 @@ $(document).ready(function() {
     $(`#${valores[posicion]}`).fadeIn("slow");
     $(`#${valores[posicion]}`).css("display", "flex");
   });
-  
+
   $("#boton_abajo_r").click(function(e) {
     e.preventDefault();
     if (posicion === valores.length - 1) {
@@ -61,12 +61,32 @@ $(document).ready(function() {
   $("#secondVid").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    video[0].src = "https://player.vimeo.com/video/112866269";
+    video[0].src = "https://www.youtube.com/embed/2_HQOk93CmU";
     console.log("picado");
     $("#contenidoPopUp").fadeIn();
 
     $("#contenidoPopUp").show();
   });
+
+  $("#firstVid").click(function(e) {
+    e.preventDefault();
+    var video = $("#youtube-video");
+    video[0].src = "https://www.youtube.com/embed/Hre6EXsxZxs";
+    console.log("picado");
+    $("#contenidoPopUp").fadeIn();
+
+    $("#contenidoPopUp").show();
+  });
+  $("#thirdVid").click(function(e) {
+    e.preventDefault();
+    var video = $("#youtube-video");
+    video[0].src = "https://www.youtube.com/embed/PmjtS5fkbbs";
+    console.log("picado");
+    $("#contenidoPopUp").fadeIn();
+
+    $("#contenidoPopUp").show();
+  });
+  thirdVid
 
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
