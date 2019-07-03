@@ -69,8 +69,8 @@ body {
 }
 
 .nav img {
-  width: 130px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .boton_arriba {
@@ -87,7 +87,7 @@ body {
 }
 
 .boton_abajo img {
- 
+
   height: 40px;
   width: 40px;
 }
@@ -224,10 +224,17 @@ body {
     height: 499px;
   }
   .nav img {
-    width: 120px;
+    width: 200px;
     height: 100px;
   }
 }
+@media(min-width:1024px) {
+    .nav img {
+    width: 200px;
+    height: 100px;
+  }
+}
+
 
 @media(min-width:1500px) {
   #foto2 img {
@@ -239,7 +246,7 @@ body {
     height: 702px;
   }
   .nav img {
-    width: 150px;
-    height: 120px;
+    width: 200px;
+    height: 100px;
   }
 }
