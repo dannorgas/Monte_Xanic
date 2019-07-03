@@ -15,10 +15,20 @@ $(document).ready(function() {
 
     video[0].src = "";
     $("#contenidoPopUp").fadeOut("slow");
-    setTimeout(() => {
-      $("#contenidoPopUp").hide();
-    }, 1500);
+
+    $("#contenidoPopUp").hide();
   });
+
+  $("#secondVid").click(function(e) {
+    e.preventDefault();
+    var video = $("#youtube-video");
+    video[0].src = "https://player.vimeo.com/video/112866269";
+    console.log("picado");
+    $("#contenidoPopUp").fadeIn();
+
+    $("#contenidoPopUp").show();
+  });
+
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
       $("#imagen_detalle1").css("display", "flex");
