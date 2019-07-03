@@ -20,6 +20,18 @@ $(document).ready(function() {
     $(valores[anterior]).hide();
     $(valores[posicion]).show();
   });
+  $(".boton_arriba").click(function(e) {
+    e.preventDefault();
+    if (posicion === valores.length - 1) {
+      window.location.href = "./Monte_Xanix_y_Gran_Ricardo.html";
+    }
+    if (posicion > 0) {
+      anterior = posicion;
+      posicion += 1;
+    }
+    $(valores[anterior]).hide();
+    $(valores[posicion]).show();
+  });
 
   var video = $("#youtube-video");
   console.log(video);
