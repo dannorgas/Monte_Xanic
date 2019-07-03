@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   var valores = ["cajita1", "cajita2", "cajita3", "cajita4"];
 
-  $(".boton_arriba").click(function(e) {
+  $("#boton_arriba_r").click(function(e) {
     e.preventDefault();
     if (posicion === 0) {
       window.location.href = "./Monte_Xanix_y_Gran_Ricardo.html";
@@ -17,10 +17,10 @@ $(document).ready(function() {
       anterior = posicion;
       posicion -= 1;
     }
-    $(valores[anterior]).hide();
-    $(valores[posicion]).show();
+    $(`#${valores[anterior]}`).hide();
+    $(`#${valores[posicion]}`).show();
   });
-  $(".boton_arriba").click(function(e) {
+  $("#boton_abajo_r").click(function(e) {
     e.preventDefault();
     if (posicion === valores.length - 1) {
       window.location.href = "./Monte_Xanix_y_Gran_Ricardo.html";
