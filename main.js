@@ -1,8 +1,25 @@
-window.addEventListener("beforeunload", function () {
+window.addEventListener("beforeunload", function() {
   document.body.classList.add("animate-out");
 });
 
 $(document).ready(function() {
+
+  $("#vercompleto").click(function(e) {
+    e.preventDefault();
+    var video = $("#youtube-video");
+    
+    video[0].src += "&autoplay=1";
+  
+
+  });
+  $("#saltarvideo").click(function(e) {
+    e.preventDefault();
+    var video = $("#youtube-video");
+    
+    video[0].src = "";
+
+    $("#contenidoPopUp").hide();
+  });
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
       $("#imagen_detalle1").css("display", "flex");
@@ -55,6 +72,3 @@ function hover(element, src) {
     hold = src;
   });
 }
-
-
-

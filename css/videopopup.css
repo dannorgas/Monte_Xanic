@@ -427,3 +427,40 @@ body.logged-in .YouTubePopUp-Wrap{ /* For WordPress */
   }
 }
 
+
+
+.contenidoPopUp{
+  position: fixed;
+  z-index: 200;
+  background: white;
+  left: 5%;
+  top: 2%;
+  width: 90%;
+  height: 90%;
+  border: 2px solid white;
+}
+
+#vercompleto {
+  position: fixed;
+  z-index: 201;
+  top: 80%;
+  left: 15%;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+#saltarvideo {
+  position: fixed;
+  z-index: 201;
+  top: 80%;
+  left: 80%;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
