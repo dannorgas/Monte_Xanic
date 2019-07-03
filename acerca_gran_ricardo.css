@@ -53,12 +53,10 @@
 
     .contenido_gran_ricardo {
         padding-bottom: 1rem;
-
         min-height: 90vh;
         max-height: 90vh;
         min-width: 80%;
         max-width: 90%;
-
     }
 
     .cajita {
@@ -114,69 +112,48 @@
         padding: 0rem;
     }
 
-
-
-
-
-
-
-
-
-
-
-    @media(min-width:1000px) {
-
-        #cajita2 .rostro img{
-            padding-top: 2rem;
-            width: 70%;
-
-        }
-
-        #cajita2 .texto img{
-            padding-top: 4rem;
-            width: 85%;
-
-        }
-
-        #cajita3 .rostro img{
-            padding-top: 2rem;
-            width: 50%;
-
-        }
-
-        #cajita3 .texto img{
-            padding-top: 3rem;
-            width: 80%;
-
-        }
-
-
-        .rostro img {
-            width: 40%;
-        }
-
-
-
-        .texto img {
-            width: 55%;
-        }
-
-    }
-
-
-
     @media(min-width:850px) {
         .rostro img {
             padding-top: 8rem;
             width: 85%;
         }
-
         .texto img {
             padding-top: 8rem;
             width: 85%;
         }
     }
 
+    @media(min-width:1200px) {
+
+        .rostro img {
+            width: 40%;
+        }
+        .texto img {
+            width: 55%;
+        }
+        #cajita2 .rostro img {
+            padding-top: 2rem;
+            width: 70%;
+        }
+        #cajita2 .texto img {
+            padding-top: 4rem;
+            width: 85%;
+        }
+        #cajita3 .rostro img {
+            padding-top: 2rem;
+            width: 70%;
+        }
+        #cajita3 .texto img {
+            padding-top: 3rem;
+            width: 80%;
+        }
+        #cajita3 .rostro {
+            text-align: right;
+            margin: 0;
+            padding: 0;
+        }
+       
+    }
 
     @media(min-width:1350px) {
         .rostro img {
@@ -187,16 +164,18 @@
             padding-top: 4rem;
             width: 65%;
         }
-
     }
 
     @media(min-width:1500px) {
+
+        .contenido_gran_ricardo {
+            padding-top: 3rem;
+            
+        }
         .rostro img {
             padding-top: 5rem;
             width: 80%;
-
         }
-
         .texto img {
             padding-top: 5rem;
             width: 80%;
