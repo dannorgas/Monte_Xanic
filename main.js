@@ -3,11 +3,33 @@ window.addEventListener("beforeunload", function() {
 });
 
 $(document).ready(function() {
+  var posicion = 0;
+  var anterior = null;
+
+  var valores = ["cajita1", "cajita2", "cajita3", "cajita4"];
+
+  $(".boton_arriba").click(function(e) {
+    e.preventDefault();
+    if (posicion === 0) {
+      window.location.href = "./Monte_Xanix_y_Gran_Ricardo.html";
+    }
+    if (posicion > 0) {
+      anterior = posicion;
+      posicion -= 1;
+    }
+    $(valores[anterior]).hide();
+    $(valores[posicion]).show();
+  });
+
+  var video = $("#youtube-video");
+  console.log(video);
   $("#vercompleto").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
 
     video[0].src += "&autoplay=1";
+
+    video[0].requestFullscreen();
   });
   $("#saltarvideo").click(function(e) {
     e.preventDefault();
