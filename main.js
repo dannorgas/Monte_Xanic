@@ -2,24 +2,52 @@ window.addEventListener("beforeunload", function() {
   document.body.classList.add("animate-out");
 });
 
+
+
 $(document).ready(function() {
 
   $("#vercompleto").click(function(e) {
     e.preventDefault();
-    var video = $("#youtube-video");
-
-    video[0].src += "&autoplay=1";
-
-
+      var video = $("#youtube-video");
+      video[0].requestFullscreen();
   });
+
   $("#saltarvideo").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
 
     video[0].src = "";
+    $("#contenidoPopUp").fadeOut("slow");
 
     $("#contenidoPopUp").hide();
   });
+
+  $("#firstVid").click(function(e) {
+    e.preventDefault();
+    var video = $("#youtube-video");
+    video[0].src = "https://www.youtube.com/embed/Hre6EXsxZxs?rel=0&controls=0&autoplay=1";
+    $("#contenidoPopUp").fadeIn();
+    $("#contenidoPopUp").show();
+  });
+
+    $("#secondVid").click(function(e) {
+        e.preventDefault();
+        var video = $("#youtube-video");
+        video[0].src = "https://www.youtube.com/embed/2_HQOk93CmU?rel=0&controls=0&autoplay=1";
+        $("#contenidoPopUp").fadeIn();
+
+        $("#contenidoPopUp").show();
+    });
+
+    $("#thirdVid").click(function(e) {
+        e.preventDefault();
+        var video = $("#youtube-video");
+        video[0].src = "https://www.youtube.com/embed/PmjtS5fkbbs?rel=0&controls=0&autoplay=1";
+        $("#contenidoPopUp").fadeIn();
+
+        $("#contenidoPopUp").show();
+    });
+
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
       $("#imagen_detalle1").css("display", "flex");
@@ -72,3 +100,19 @@ function hover(element, src) {
     hold = src;
   });
 }
+
+function fullScreen() {
+
+    var e = document.getElementById("video-wrapper");
+    if (e.requestFullscreen) {
+        e.requestFullscreen();
+    } else if (e.webkitRequestFullscreen) {
+        e.webkitRequestFullscreen();
+    } else if (e.mozRequestFullScreen) {
+        e.mozRequestFullScreen();
+    } else if (e.msRequestFullscreen) {
+        e.msRequestFullscreen();
+    }
+}
+
+
