@@ -2,10 +2,6 @@ html {
     box-sizing: border-box;
 }
 
-*, *::after, *::before {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
 
 body {
     background-image: url("./img/pagina2/fondo_botella.png");
@@ -28,7 +24,7 @@ body {
 }
 
  .boton_abajo img {
-   
+
     height: 40px;
     width: 40px;
 }
