@@ -61,7 +61,7 @@ $(document).ready(function() {
   $("#secondVid").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    video[0].src = "https://www.youtube.com/embed/2_HQOk93CmU";
+    video[0].src = "https://www.youtube.com/embed/2_HQOk93CmU?rel=0";
     console.log("picado");
     $("#contenidoPopUp").fadeIn();
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
   $("#firstVid").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    video[0].src = "https://www.youtube.com/embed/Hre6EXsxZxs";
+    video[0].src = "https://www.youtube.com/embed/Hre6EXsxZxs?rel=0";
     console.log("picado");
     $("#contenidoPopUp").fadeIn();
 
@@ -80,7 +80,7 @@ $(document).ready(function() {
   $("#thirdVid").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    video[0].src = "https://www.youtube.com/embed/PmjtS5fkbbs";
+    video[0].src = "https://www.youtube.com/embed/PmjtS5fkbbs?rel=0";
     console.log("picado");
     $("#contenidoPopUp").fadeIn();
 
