@@ -22,6 +22,7 @@ $(document).ready(function() {
     $(`#${valores[posicion]}`).fadeIn("slow");
     $(`#${valores[posicion]}`).css("display", "flex");
   });
+  
   $("#boton_abajo_r").click(function(e) {
     e.preventDefault();
     if (posicion === valores.length - 1) {
