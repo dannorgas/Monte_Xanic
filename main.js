@@ -3,22 +3,21 @@ window.addEventListener("beforeunload", function() {
 });
 
 $(document).ready(function() {
-
   $("#vercompleto").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    
-    video[0].src += "&autoplay=1";
-  
 
+    video[0].src += "&autoplay=1";
   });
   $("#saltarvideo").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    
-    video[0].src = "";
 
-    $("#contenidoPopUp").hide();
+    video[0].src = "";
+    $("#contenidoPopUp").fadeOut("slow");
+    setTimeout(() => {
+      $("#contenidoPopUp").hide();
+    }, 1500);
   });
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
