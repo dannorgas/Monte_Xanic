@@ -2,8 +2,6 @@ window.addEventListener("beforeunload", function() {
   document.body.classList.add("animate-out");
 });
 
-
-
 $(document).ready(function() {
   var posicion = 0;
   var anterior = null;
@@ -45,7 +43,6 @@ $(document).ready(function() {
 
     video[0].requestFullscreen();
   });
-
   $("#saltarvideo").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
@@ -56,31 +53,15 @@ $(document).ready(function() {
     $("#contenidoPopUp").hide();
   });
 
-  $("#firstVid").click(function(e) {
+  $("#secondVid").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    video[0].src = "https://www.youtube.com/embed/Hre6EXsxZxs?rel=0&controls=0&autoplay=1";
+    video[0].src = "https://player.vimeo.com/video/112866269";
+    console.log("picado");
     $("#contenidoPopUp").fadeIn();
+
     $("#contenidoPopUp").show();
   });
-
-    $("#secondVid").click(function(e) {
-        e.preventDefault();
-        var video = $("#youtube-video");
-        video[0].src = "https://www.youtube.com/embed/2_HQOk93CmU?rel=0&controls=0&autoplay=1";
-        $("#contenidoPopUp").fadeIn();
-
-        $("#contenidoPopUp").show();
-    });
-
-    $("#thirdVid").click(function(e) {
-        e.preventDefault();
-        var video = $("#youtube-video");
-        video[0].src = "https://www.youtube.com/embed/PmjtS5fkbbs?rel=0&controls=0&autoplay=1";
-        $("#contenidoPopUp").fadeIn();
-
-        $("#contenidoPopUp").show();
-    });
 
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
@@ -134,19 +115,3 @@ function hover(element, src) {
     hold = src;
   });
 }
-
-function fullScreen() {
-
-    var e = document.getElementById("video-wrapper");
-    if (e.requestFullscreen) {
-        e.requestFullscreen();
-    } else if (e.webkitRequestFullscreen) {
-        e.webkitRequestFullscreen();
-    } else if (e.mozRequestFullScreen) {
-        e.mozRequestFullScreen();
-    } else if (e.msRequestFullscreen) {
-        e.msRequestFullscreen();
-    }
-}
-
-
