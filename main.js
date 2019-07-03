@@ -86,7 +86,7 @@ $(document).ready(function() {
 
     $("#contenidoPopUp").show();
   });
-  thirdVid
+  
 
   $("#imagen_categoria1")
     .on("mouseover", function(event) {
