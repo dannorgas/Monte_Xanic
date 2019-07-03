@@ -7,15 +7,15 @@ $(document).ready(function() {
   $("#vercompleto").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    
+
     video[0].src += "&autoplay=1";
-  
+
 
   });
   $("#saltarvideo").click(function(e) {
     e.preventDefault();
     var video = $("#youtube-video");
-    
+
     video[0].src = "";
 
     $("#contenidoPopUp").hide();
