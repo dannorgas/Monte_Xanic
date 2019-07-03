@@ -17,20 +17,24 @@ $(document).ready(function() {
       anterior = posicion;
       posicion -= 1;
     }
-    $(`#${valores[anterior]}`).hide();
-    $(`#${valores[posicion]}`).show();
+
+    $(`#${valores[anterior]}`).fadeOut("slow");
+    $(`#${valores[posicion]}`).fadeIn("slow");
+    $(`#${valores[posicion]}`).css("display", "flex");
   });
   $("#boton_abajo_r").click(function(e) {
     e.preventDefault();
     if (posicion === valores.length - 1) {
-      window.location.href = "./Monte_Xanix_y_Gran_Ricardo.html";
+      window.location.href = "./Cierre.html";
     }
-    if (posicion > 0) {
-      anterior = posicion;
-      posicion += 1;
-    }
-    $(valores[anterior]).hide();
-    $(valores[posicion]).show();
+
+    anterior = posicion;
+    posicion += 1;
+
+    $(`#${valores[anterior]}`).fadeOut("slow");
+
+    $(`#${valores[posicion]}`).fadeIn("slow");
+    $(`#${valores[posicion]}`).css("display", "flex");
   });
 
   var video = $("#youtube-video");

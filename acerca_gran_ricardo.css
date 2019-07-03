@@ -52,12 +52,11 @@
     }
 
     .contenido_gran_ricardo {
-    
+        padding-top: 3rem;
         min-height: 90vh;
         max-height: 100vh;
         min-width: 80%;
         max-width: 90%;
-        
     }
 
     .cajita {
@@ -66,10 +65,7 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-    
     }
-
-
 
     .rostro {
         flex: 0 1 calc(50% -1rem);
@@ -90,11 +86,9 @@
         width: 75%;
     }
 
-    #cajita2,#cajita3,#cajita4{
+    #cajita2, #cajita3, #cajita4 {
         display: none;
     }
-
-
 
     #cajita2 .rostro img {
         width: 85%;
@@ -103,72 +97,56 @@
     #cajita3 {
         padding-left: 5rem;
     }
-    #cajita3 .rostro{
+
+    #cajita3 .rostro {
         text-align: center;
         margin-right: 1rem;
-    
     }
+
     #cajita3 .rostro img {
         width: 100%;
         max-height: 90vh;
     }
 
-    #cajita4 .rostro  {
-    padding: 0rem;
+    #cajita4 .rostro {
+        padding: 0rem;
     }
 
-
-
-
-
-
-
-
     @media(min-width:1000px) {
-
         .rostro img {
             width: 90%;
         }
-        
         .texto img {
             width: 90%;
         }
-    
     }
 
     @media(min-width:850px) {
-
         .rostro img {
             width: 90%;
         }
-        
         .texto img {
             width: 90%;
         }
-    
     }
+
     @media(min-width:1350px) {
-
         .rostro img {
             width: 75%;
         }
-        
         .texto img {
             width: 75%;
         }
-        
     }
+
     @media(min-width:1500px) {
-
         .rostro img {
             width: 100%;
         }
-        
         .texto img {
             width: 100%;
         }
     }
-
 
     /* d4ni3l.krok */
 
@@ -178,4 +156,3 @@
         width: 8rem;
         height: 6rem;
     }
-    
