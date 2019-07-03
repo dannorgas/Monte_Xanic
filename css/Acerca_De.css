@@ -7,8 +7,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 50%;
-
-}
+  }
 
 
 .foto img{
@@ -42,4 +41,28 @@ body {
   top: 42%;
   width: 200px;
   height: 100px;
+}
+
+.boton_arriba {
+  position: fixed;
+  top: 0;
+  left: 49%;
+}
+
+.boton_abajo {
+  padding-bottom: 0.3rem;
+  position: fixed;
+  bottom: 0;
+  left: 48%;
+}
+
+.boton_abajo img {
+
+  height: 40px;
+  width: 40px;
+}
+.boton_arriba img{
+  padding-top: 0.1rem;
+  height: 40px;
+  width: 40px;
 }
